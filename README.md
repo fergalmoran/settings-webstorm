@@ -1,1 +1,1 @@
-My dotfiles - use homesick to clone
+My unix dotfiles (check vimfiles for my vim config)
