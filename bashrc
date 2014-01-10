@@ -123,4 +123,4 @@ export OPENNI2_INCLUDE=/home/fergalm/dev/kinect/lib/OpenNI-Linux-x64-2.2/Include
 export OPENNI2_REDIST=/home/fergalm/dev/kinect/lib/OpenNI-Linux-x64-2.2/Redist
 export WORKON_HOME=~/.virtualenvs
 . /usr/local/bin/virtualenvwrapper.sh
-. ~/bin/z.sh
+. ~/dotfiles/z.sh
