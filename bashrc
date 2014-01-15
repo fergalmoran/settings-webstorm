@@ -118,7 +118,7 @@ fi
 
 
 export SENCHA_CMD_3_0_0="/home/fergalm/dev/sencha/Sencha/Cmd/4.0.0.203"
-export PATH=$SENCHA_CMD_3_0_0:$PATH
+export PATH=$SENCHA_CMD_3_0_0:~/bin/:$PATH
 export OPENNI2_INCLUDE=/home/fergalm/dev/kinect/lib/OpenNI-Linux-x64-2.2/Include
 export OPENNI2_REDIST=/home/fergalm/dev/kinect/lib/OpenNI-Linux-x64-2.2/Redist
 export WORKON_HOME=~/.virtualenvs
