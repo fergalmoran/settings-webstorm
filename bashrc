@@ -124,3 +124,4 @@ export OPENNI2_REDIST=/home/fergalm/dev/kinect/lib/OpenNI-Linux-x64-2.2/Redist
 export WORKON_HOME=~/.virtualenvs
 . /usr/local/bin/virtualenvwrapper.sh
 . ~/dotfiles/z.sh
+source ~/.bash_prompt
