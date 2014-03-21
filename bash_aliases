@@ -10,3 +10,8 @@ alias dbstatus="dropbox.py status"
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
+
+doGrepSearch(){
+    find | grep $1
+}
+alias f=doGrepSearch
