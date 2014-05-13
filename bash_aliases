@@ -11,6 +11,11 @@ alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
 
+doAgFind(){
+    ag --ignore-dir node_modules --ignore-dir bower_components $1
+}
+alias ag=doAgFind
+
 doGrepSearch(){
     find | grep $1
 }
