@@ -27,3 +27,7 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
 done
+
+[ -d ~/bin ] || mkdir ~/bin
+chmod +x $dir/dropbox.py
+ln -s $dir/dropbox.py ~/bin/dropbox.py
