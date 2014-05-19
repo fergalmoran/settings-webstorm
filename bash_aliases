@@ -22,6 +22,6 @@ doGrepSearch(){
 alias f=doGrepSearch
 
 doPsKill(){
-    ps aux | grep -ie $1 | awk '{print $2}' | xargs kill -9
+    sudo ps aux | grep -ie $1 | awk '{print $2}' | xargs kill -9
 }
 alias pskill=doPsKill
