@@ -114,7 +114,7 @@ if ! shopt -oq posix; then
 fi
 
 
-export PATH=$PATH:/srv/dev/android-sdk-linux/tools:/srv/dev/android-sdk-linux/platform-tools/
+export PATH=$PATH:/opt/android-sdk-linux/tools:/opt/android-sdk-linux/platform-tools/
 
 
 export SENCHA_CMD_3_0_0="/home/fergalm/dev/sencha/Sencha/Cmd/4.0.0.203"
