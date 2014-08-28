@@ -6,10 +6,12 @@ alias psql="sudo -u postgres psql deepsouthsounds"
 alias dss="cd ~/development/deepsouthsounds.com/dss && workon dss"
 alias upd="sudo apt-get update && sudo apt-get dist-upgrade"
 alias dropbox="dropbox.py"
+alias dbstatus="dropbox.py status"
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 alias iotop='sudo iotop'
 alias rmq=' sudo rabbitmqctl'
+alias congo='node /srv/dev/working/congo/server.js'
 
 alias andconnect='adb connect 10.1.1.102:5555'
 
