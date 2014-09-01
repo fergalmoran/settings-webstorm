@@ -1,11 +1,13 @@
-alias rmdb="find . -name \*\'s\ conflicted\ copy\ \* -exec rm  {} \;"
+
+#Django stuff
 alias djrun="python manage.py runserver_plus 0.0.0.0:8000"
+alias djshell="python manage.py shell_plus --use-pythonrc --ipython"
+
+alias rmdb="find . -name \*\'s\ conflicted\ copy\ \* -exec rm  {} \;"
 alias server="python -m SimpleHTTPServer 9999"
 alias upd="sudo apt-get update && sudo apt-get dist-upgrade"
 alias psql="sudo -u postgres psql deepsouthsounds"
 alias dss="cd ~/development/deepsouthsounds.com/dss && workon dss"
-alias upd="sudo apt-get update && sudo apt-get dist-upgrade"
-alias dropbox="dropbox.py"
 alias dbstatus="dropbox.py status"
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
