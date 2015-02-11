@@ -2,6 +2,7 @@
 #Django stuff
 alias djrun="python manage.py runserver_plus 0.0.0.0:8000"
 alias djshell="python manage.py shell_plus --use-pythonrc --ipython"
+alias djmigrate="python manage.py schemamigration spa --auto"
 
 alias rmdb="find . -name \*\'s\ conflicted\ copy\ \* -exec rm  {} \;"
 alias server="python -m SimpleHTTPServer 9999"
