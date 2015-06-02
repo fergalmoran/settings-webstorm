@@ -113,6 +113,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Include functions file
+if [ -f ~/.bash_functions ]; then
+   source ~/.bash_functions
+fi
+
 
 export ANDROID_SDK=/opt/android-sdk-linux/
 export PATH=$PATH:/opt/android-sdk-linux/tools:/opt/android-sdk-linux/platform-tools/
@@ -124,7 +129,7 @@ export WORKON_HOME=~/.virtualenvs
 . /usr/local/bin/virtualenvwrapper.sh
 . ~/dotfiles/z.sh
 source ~/.bash_prompt
-
+source ~/dotfiles/git-flow-completion.bash
 
 export HISTCONTROL=ignoredups:erasedups  # no duplicate entries
 export HISTSIZE=100000                   # big big history

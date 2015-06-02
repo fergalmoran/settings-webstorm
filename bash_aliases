@@ -5,6 +5,7 @@ alias djshell="python manage.py shell_plus --use-pythonrc --ipython"
 alias dbshell="python manage.py dbshell"
 alias djmigrate="python manage.py schemamigration spa --auto"
 alias dss="cd ~/Dropbox/development/deepsouthsounds.com/dss.api && workon dssapi"
+alias pgdo="sudo -u postgres"
 
 alias reloadbashrc="source ~/.bashrc"
 alias rmdb="find . -name \*\'s\ conflicted\ copy\ \* -exec rm  {} \;"
