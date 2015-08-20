@@ -113,9 +113,14 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Include functions file
+if [ -f ~/.bash_functions ]; then
+   source ~/.bash_functions
+fi
+
 
 export ANDROID_SDK=/opt/android-sdk-linux/
-export PATH=$PATH:/opt/android-sdk-linux/tools:/opt/android-sdk-linux/platform-tools/
+export PATH=$PATH:/opt/android-sdk-linux/tools:/opt/android-sdk-linux/platform-tools/:/opt/genymotion
 export SENCHA_CMD_3_0_0="/home/fergalm/dev/sencha/Sencha/Cmd/4.0.0.203"
 export PATH=$SENCHA_CMD_3_0_0:~/bin/:$PATH
 export OPENNI2_INCLUDE=/home/fergalm/dev/kinect/lib/OpenNI-Linux-x64-2.2/Include
@@ -124,7 +129,7 @@ export WORKON_HOME=~/.virtualenvs
 . /usr/local/bin/virtualenvwrapper.sh
 . ~/dotfiles/z.sh
 source ~/.bash_prompt
-
+source ~/dotfiles/git-flow-completion.bash
 
 export HISTCONTROL=ignoredups:erasedups  # no duplicate entries
 export HISTSIZE=100000                   # big big history
