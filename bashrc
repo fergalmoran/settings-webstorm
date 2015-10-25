@@ -120,7 +120,7 @@ fi
 
 
 export ANDROID_SDK=/opt/android-sdk-linux/
-export PATH=$PATH:/opt/android-sdk-linux/tools:/opt/android-sdk-linux/platform-tools/
+export PATH=$PATH:/opt/android-sdk-linux/tools:/opt/android-sdk-linux/platform-tools/:/opt/genymotion
 export SENCHA_CMD_3_0_0="/home/fergalm/dev/sencha/Sencha/Cmd/4.0.0.203"
 export PATH=$SENCHA_CMD_3_0_0:~/bin/:$PATH
 export OPENNI2_INCLUDE=/home/fergalm/dev/kinect/lib/OpenNI-Linux-x64-2.2/Include
