@@ -1,6 +1,6 @@
 
 #Django stuff
-alias djrun="python manage.py runserver 0.0.0.0:8001"
+alias djrun="source /home/fergalm/Dropbox/development/deepsouthsounds.com/dss.docker/api_env && python manage.py runserver 0.0.0.0:8001"
 alias djshell="python manage.py shell_plus --use-pythonrc --ipython"
 alias dbshell="python manage.py dbshell"
 alias djmigrate="python manage.py schemamigration spa --auto"
@@ -20,7 +20,6 @@ alias iotop='sudo iotop'
 alias rmq=' sudo rabbitmqctl'
 alias congo='node /srv/dev/working/congo/server.js'
 
-alias dc='docker-compose'
 alias andconnect='adb connect 10.1.1.102:5555'
 
 doAgFind(){
@@ -39,3 +38,5 @@ doPsKill(){
 alias pskill=doPsKill
 
 alias docker-nuke="docker rm -f $(docker ps -a -q) && docker rmi $(docker images -q)"
+alias dc='docker-compose'
+alias docker-rm-untagged='docker rmi -f $(docker images | grep "^<none>" | awk "{print $3}")'}
