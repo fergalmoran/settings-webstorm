@@ -140,3 +140,4 @@ shopt -s histappend                      # append to history, don't overwrite it
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 export PATH=$PATH:/home/fergalm/Dropbox/development/working/cray/bin
+export NODE_PATH=/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript:/usr/local/lib/node_modules
