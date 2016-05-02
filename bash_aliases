@@ -2,23 +2,31 @@
 #Django stuff
 alias djrun="source /home/fergalm/Dropbox/development/deepsouthsounds.com/dss.docker/api_env && python manage.py runserver 0.0.0.0:8001"
 alias djshell="python manage.py shell_plus --use-pythonrc --ipython"
-alias dbshell="python manage.py dbshell"
+alias djdb="python manage.py dbshell"
 alias djmigrate="python manage.py schemamigration spa --auto"
+
 alias dss="cd ~/Dropbox/development/deepsouthsounds.com/dss.api && workon dss"
 alias dss_radio="cd ~/Dropbox/development/deepsouthsounds.com/dss.radio && workon dss.radio && docker start dssdocker_icecast_1"
 alias pgdo="sudo -u postgres"
+alias sqlw="sqlw &"
 
 alias reloadbashrc="source ~/.bashrc"
-alias rmdb="find . -name \*\'s\ conflicted\ copy\ \* -exec rm  {} \;"
 alias server="python -m SimpleHTTPServer 9999"
 alias upd="sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove"
 alias psql="sudo -u postgres psql deepsouthsounds"
+alias code="/usr/bin/code-insiders"
+
 alias dbstatus="dropbox.py status"
+alias dbignore='find `pwd` -type d -regex ".*\(node_modules\|temp\|tmp\|bower_components\|cache\)$" -prune -exec dropbox exclude add {} \;'
+alias dbrm="find . -name \*\'s\ conflicted\ copy\ \* -exec rm  {} \;"
+
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 alias iotop='sudo iotop'
 alias rmq=' sudo rabbitmqctl'
 alias congo='node /srv/dev/working/congo/server.js'
+
+alias zap='/home/fergalm/working/ZAP/zap.sh > /dev/null 2>&1 &'
 
 alias andconnect='adb connect 10.1.1.102:5555'
 

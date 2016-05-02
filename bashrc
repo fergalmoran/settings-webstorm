@@ -119,6 +119,7 @@ if [ -f ~/.bash_functions ]; then
 fi
 
 
+export ASPNET_ENV=Development
 export ANDROID_SDK=/opt/android-sdk-linux/
 export PATH=$PATH:/opt/android-sdk-linux/tools:/opt/android-sdk-linux/platform-tools/:/opt/genymotion
 export SENCHA_CMD_3_0_0="/home/fergalm/dev/sencha/Sencha/Cmd/4.0.0.203"
@@ -140,3 +141,12 @@ shopt -s histappend                      # append to history, don't overwrite it
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 export PATH=$PATH:/home/fergalm/Dropbox/development/working/cray/bin
+
+export DOCKER_TLS_VERIFY="1"
+export DOCKER_HOST="tcp://dssvm2.cloudapp.net:2376"
+export DOCKER_CERT_PATH="/home/fergalm/.docker/machine/machines/dssvm2"
+export DOCKER_MACHINE_NAME="dssvm2"
+
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+
+source /home/fergalm/.dnx/dnvm/dnvm.sh
