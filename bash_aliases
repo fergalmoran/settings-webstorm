@@ -5,8 +5,10 @@ alias djshell="python manage.py shell_plus --use-pythonrc --ipython"
 alias djdb="python manage.py dbshell"
 alias djmigrate="python manage.py schemamigration spa --auto"
 
-alias dss="cd ~/Dropbox/development/deepsouthsounds.com/dss.api && workon dss"
+alias dss="cd ~/Dropbox/development/deepsouthsounds.com/dss.api && workon dss.api"
+alias dss_nuke_venv='deactivate || rm -rf ~/.virtualenvs/dss.api/ && mkvirtualenv dss.api -p python3 && pip install --upgrade pip && pip install -r requirements.txt'
 alias dss_radio="cd ~/Dropbox/development/deepsouthsounds.com/dss.radio && workon dss.radio && docker start dssdocker_icecast_1"
+
 alias pgdo="sudo -u postgres"
 alias sqlw="sqlw &"
 
@@ -48,3 +50,5 @@ alias pskill=doPsKill
 alias docker-nuke="docker rm -f $(docker ps -a -q) && docker rmi $(docker images -q)"
 alias dc='docker-compose'
 alias docker-rm-untagged='docker rmi -f $(docker images | grep "^<none>" | awk "{print $3}")'}
+
+
