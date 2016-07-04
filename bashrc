@@ -150,3 +150,4 @@ export DOCKER_MACHINE_NAME="dssvm2"
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 
 source /home/fergalm/.dnx/dnvm/dnvm.sh
+export NODE_PATH=/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript:/usr/local/lib/node_modules
