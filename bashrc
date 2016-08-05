@@ -1,4 +1,3 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
@@ -118,8 +117,6 @@ if [ -f ~/.bash_functions ]; then
    source ~/.bash_functions
 fi
 
-
-export ASPNET_ENV=Development
 export ANDROID_SDK=/opt/android-sdk-linux/
 export PATH=$PATH:/opt/android-sdk-linux/tools:/opt/android-sdk-linux/platform-tools/:/opt/genymotion
 export SENCHA_CMD_3_0_0="/home/fergalm/dev/sencha/Sencha/Cmd/4.0.0.203"

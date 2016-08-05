@@ -41,3 +41,7 @@ if [ -f "${SSH_ENV}" ]; then
 else
     start_agent;
 fi
+
+if [ -f ~/.bashrc ]; then
+      . ~/.bashrc
+fi
