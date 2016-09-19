@@ -1,18 +1,18 @@
 
 #Django stuff
-alias djrun="source /home/fergalm/Dropbox/development/deepsouthsounds.com/dss.docker/api_env && python manage.py runserver 0.0.0.0:8001"
+alias djrun="source /home/fergalm/dev/personal/deepsouthsounds.com/dss.docker/api_env && python manage.py runserver 0.0.0.0:8001"
 alias djshell="python manage.py shell_plus --use-pythonrc --ipython"
 alias djdb="python manage.py dbshell"
 alias djmigrate="python manage.py schemamigration spa --auto"
 alias wole="source ./env/bin/activate"
 
-alias dss="cd ~/Dropbox/development/deepsouthsounds.com/dss.api && workon dss.api"
+alias dss="cd ~/dev/personal/deepsouthsounds.com/dss.api && workon dss.api"
 alias dss_nuke_venv='deactivate || rm -rf ~/.virtualenvs/dss.api/ && mkvirtualenv dss.api -p python3 && pip install --upgrade pip && pip install -r requirements.txt'
-alias dss_radio="cd ~/Dropbox/development/deepsouthsounds.com/dss.radio && workon dss.radio && docker start dssdocker_icecast_1"
+alias dss_radio="cd ~/dev/personal/deepsouthsounds.com/dss.radio && workon dss.radio && docker start dssdocker_icecast_1"
 
 alias pgdo="sudo -u postgres"
 alias sqlw="sqlw &"
-alias se="/opt/StorageExplorer/StorageExplorer"
+alias se="/opt/StorageExplorer/StorageExplorer > /dev/null 2>&1 &"
 
 alias reloadbashrc="source ~/.bashrc"
 alias server="python -m SimpleHTTPServer 9999"

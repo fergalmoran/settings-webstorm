@@ -31,3 +31,6 @@ done
 [ -d ~/bin ] || mkdir ~/bin
 chmod +x $dir/dropbox.py
 ln -s $dir/dropbox.py ~/bin/dropbox.py
+
+ln $dir/fonts ~/.fonts
+fc-cache -f -v
