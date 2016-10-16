@@ -13,6 +13,7 @@ alias dss_radio="cd ~/dev/personal/deepsouthsounds.com/dss.radio && workon dss.r
 alias pgdo="sudo -u postgres"
 alias sqlw="sqlw &"
 alias se="/opt/StorageExplorer/StorageExplorer > /dev/null 2>&1 &"
+alias dbv="/usr/local/bin/dbvis > /dev/null 2>&1 &"
 
 alias reloadbashrc="source ~/.bashrc"
 alias server="python -m SimpleHTTPServer 9999"

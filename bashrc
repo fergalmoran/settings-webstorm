@@ -123,10 +123,10 @@ export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 export PATH=$PATH:/home/fergalm/Dropbox/development/working/cray/bin
 
-export DOCKER_TLS_VERIFY="1"
-export DOCKER_HOST="tcp://dssvm2.cloudapp.net:2376"
-export DOCKER_CERT_PATH="/home/fergalm/.docker/machine/machines/dssvm2"
-export DOCKER_MACHINE_NAME="dssvm2"
+#export DOCKER_TLS_VERIFY="1"
+#export DOCKER_HOST="tcp://dssvm2.cloudapp.net:2376"
+#export DOCKER_CERT_PATH="/home/fergalm/.docker/machine/machines/dssvm2"
+#export DOCKER_MACHINE_NAME="dssvm2"
 
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 
