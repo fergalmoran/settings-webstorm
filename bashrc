@@ -107,9 +107,6 @@ export SENCHA_CMD_3_0_0="/home/fergalm/dev/sencha/Sencha/Cmd/4.0.0.203"
 export PATH=$SENCHA_CMD_3_0_0:~/bin/:$PATH
 export OPENNI2_INCLUDE=/home/fergalm/dev/kinect/lib/OpenNI-Linux-x64-2.2/Include
 export OPENNI2_REDIST=/home/fergalm/dev/kinect/lib/OpenNI-Linux-x64-2.2/Redist
-export WORKON_HOME=~/.virtualenvs
-. /usr/local/bin/virtualenvwrapper.sh
-. ~/dotfiles/z.sh
 source ~/.bash_prompt
 source ~/dotfiles/git-flow-completion.bash
 
@@ -120,15 +117,3 @@ shopt -s histappend                      # append to history, don't overwrite it
 
 # Save and reload the history after each command finishes
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
-
-export PATH=$PATH:/home/fergalm/Dropbox/development/working/cray/bin
-
-#export DOCKER_TLS_VERIFY="1"
-#export DOCKER_HOST="tcp://dssvm2.cloudapp.net:2376"
-#export DOCKER_CERT_PATH="/home/fergalm/.docker/machine/machines/dssvm2"
-#export DOCKER_MACHINE_NAME="dssvm2"
-
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
-
-source /home/fergalm/.dnx/dnvm/dnvm.sh
-export NODE_PATH=/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript:/usr/local/lib/node_modules
