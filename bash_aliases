@@ -7,13 +7,13 @@ alias djmigrate="python manage.py schemamigration spa --auto"
 alias wole="source ./env/bin/activate"
 
 alias dss="cd ~/dev/personal/deepsouthsounds.com/dss.api && workon dss.api"
-alias dss_nuke_venv='deactivate || rm -rf ~/.virtualenvs/dss.api/ && mkvirtualenv dss.api -p python3 && pip install --upgrade pip && pip install -r requirements.txt'
 alias dss_radio="cd ~/dev/personal/deepsouthsounds.com/dss.radio && workon dss.radio && docker start dssdocker_icecast_1"
 
 alias pgdo="sudo -u postgres"
 alias sqlw="sqlw &"
 alias se="/opt/StorageExplorer/StorageExplorer > /dev/null 2>&1 &"
 alias dbv="/usr/local/bin/dbvis > /dev/null 2>&1 &"
+alias rsl="rslsync --config /home/fergalm/.config/resilio-sync/config.json"
 
 alias reloadbashrc="source ~/.bashrc"
 alias server="python -m SimpleHTTPServer 9999"
