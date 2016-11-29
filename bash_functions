@@ -35,10 +35,3 @@ cb() {
 
 function gi() { curl -L -s https://www.gitignore.io/api/\$@ ;}
 
-function installCode(){
-  cd /tmp
-  sudo rm -rfv /opt/VSCode-linux-x64
-  sudo unzip /tmp/VSCode-linux-x64-stable.zip -d /opt/
-  sudo chown fergalm:fergalm /opt/VSCode-linux-x64 -R
-  sudo chown fergalm:fergalm /opt/VSCode-linux-x64 
-}
