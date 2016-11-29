@@ -52,6 +52,6 @@ alias pskill=doPsKill
 
 alias docker-nuke="docker rm $(docker ps -a -q) && docker rmi $(docker images -q)"
 alias dc='docker-compose'
-alias docker-rm-untagged='docker rmi -f $(docker images | grep "^<none>" | awk "{print $3}")'}
+alias docker-rm-untagged='docker rmi -f $(docker images | grep "^<none>" | awk "{print $3}")'
 
 

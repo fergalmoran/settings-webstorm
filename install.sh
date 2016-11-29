@@ -6,7 +6,7 @@ h
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="zshrc bashrc bash_aliases bash_profile bash_prompt bash_functions sqliterc"    # list of files/folders to symlink in homedir
+files="zshrc bash_aliases bash_functions sqliterc"    # list of files/folders to symlink in homedir
 
 ##########
 
@@ -32,5 +32,9 @@ done
 chmod +x $dir/dropbox.py
 ln -s $dir/dropbox.py ~/bin/dropbox.py
 
-ln $dir/fonts ~/.fonts
-fc-cache -f -v
+#ln $dir/fonts ~/.fonts
+#fc-cache -f -v
+
+
+git clone https://github.com/powerline/fonts.git pwfonts
+cd pwfonts && ./install.sh
