@@ -38,3 +38,11 @@ ln -s $dir/dropbox.py ~/bin/dropbox.py
 
 git clone https://github.com/powerline/fonts.git pwfonts
 cd pwfonts && ./install.sh
+
+echo "Setting up zsh"
+
+OMF=~/.oh-my-zsh/oh-my-zsh.sh
+if [ ! -f $OMF ]; then
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+fi
+
