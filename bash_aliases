@@ -12,12 +12,12 @@ alias dss_radio="cd ~/dev/personal/deepsouthsounds.com/dss.radio && workon dss.r
 alias pgdo="sudo -u postgres"
 alias sqlw="sqlw &"
 alias se="/opt/StorageExplorer/StorageExplorer > /dev/null 2>&1 &"
-alias dbv="/usr/local/bin/dbvis > /dev/null 2>&1 &"
+alias dbv="dbeaver > /dev/null 2>&1 &"
 alias rsl="rslsync --config /home/fergalm/.config/resilio-sync/config.json"
 
 alias reloadbashrc="source ~/.bashrc"
 alias server="python -m SimpleHTTPServer 9999"
-alias upd="sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove"
+alias upd="sudo apt update && sudo apt dist-upgrade && sudo apt autoremove"
 alias psql="sudo -u postgres psql deepsouthsounds"
 alias code="/usr/bin/code-insiders"
 
@@ -50,8 +50,8 @@ doPsKill(){
 }
 alias pskill=doPsKill
 
-alias docker-nuke="docker rm -f $(docker ps -a -q) && docker rmi $(docker images -q)"
+alias docker-nuke="docker rm $(docker ps -a -q) && docker rmi $(docker images -q)"
 alias dc='docker-compose'
-alias docker-rm-untagged='docker rmi -f $(docker images | grep "^<none>" | awk "{print $3}")'}
+alias docker-rm-untagged='docker rmi -f $(docker images | grep "^<none>" | awk "{print $3}")'
 
 

@@ -95,11 +95,17 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+#use known hosts for bash autocomplete - this needs "HashKnown Hosts no" in ~/.ssh/config
+complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g | uniq | grep -v "\["`;)" ssh
+
 
 # Include functions file
 if [ -f ~/.bash_functions ]; then
    source ~/.bash_functions
 fi
+
+. ~/dotfiles/z.sh
+
 
 export ANDROID_SDK=/opt/android-sdk-linux/
 export PATH=$PATH:/opt/android-sdk-linux/tools:/opt/android-sdk-linux/platform-tools/:/opt/genymotion
@@ -117,3 +123,12 @@ shopt -s histappend                      # append to history, don't overwrite it
 
 # Save and reload the history after each command finishes
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
+VIRTUALENVWRAPPER=/usr/local/bin/virtualenvwrapper.sh
+if [ -f $VIRTUALENVWRAPPER ];
+then
+    export WORKON_HOME=$HOME/.virtualenvs
+    export PROJECT_HOME=$HOME/dev/personal
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
+
