@@ -1,4 +1,3 @@
-h
 # This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
 ############################
 
@@ -46,3 +45,5 @@ if [ ! -f $OMF ]; then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
+# Setup default locales
+sudo locale-gen "en_IE.UTF-8"
