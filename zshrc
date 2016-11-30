@@ -54,6 +54,7 @@ ZSH_THEME="muse"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+source /usr/share/autojump/autojump.sh
 source ~/.bash_aliases
 
 # User configuration
