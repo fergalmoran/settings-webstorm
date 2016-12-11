@@ -55,6 +55,7 @@ plugins=(git, thefuck, git-flow-completion)
 
 source $ZSH/oh-my-zsh.sh
 source /usr/share/autojump/autojump.sh
+source /usr/local/bin/virtualenvwrapper.sh
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
