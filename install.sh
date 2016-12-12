@@ -45,3 +45,20 @@ fi
 
 # Setup default locales
 sudo locale-gen "en_IE.UTF-8"
+
+#install default packages
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+
+sudo apt -y install exuberant-ctags build-essential cmake python-dev vim-youcompleteme autojump nodejs htop ncdu
+
+
+
+
+
+git clone git@github.com:fergalmoran/vimfiles.git ~/.vim
+ln -s ~/.vim/.vimrc ~/.vimrc
+
+cd ~/.vim
+git submodule init
+git submodule update
+
