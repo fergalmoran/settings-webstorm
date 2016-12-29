@@ -37,6 +37,7 @@ git clone https://github.com/powerline/fonts.git pwfonts
 cd pwfonts && ./install.sh
 
 echo "Setting up zsh"
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 OMF=~/.oh-my-zsh/oh-my-zsh.sh
 if [ ! -f $OMF ]; then
@@ -49,9 +50,9 @@ sudo locale-gen "en_IE.UTF-8"
 #install default packages
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
-sudo apt -y install exuberant-ctags build-essential cmake python-dev vim-youcompleteme autojump nodejs htop ncdu python-pip
-sudo pip install livereload
-
+sudo apt -y install exuberant-ctags build-essential cmake python-dev vim-youcompleteme autojump nodejs htop ncdu python-pip byobu zsh
+sudo pip install livereload speedtest-cli virtualenv virtualenvwrapper
+chsh -s /bin/zsh
 
 git clone git@github.com:fergalmoran/vimfiles.git ~/.vim
 ln -s ~/.vim/.vimrc ~/.vimrc
@@ -59,4 +60,9 @@ ln -s ~/.vim/.vimrc ~/.vimrc
 cd ~/.vim
 git submodule init
 git submodule update
+vim +BundleInstall +qall
+
+git config --global user.email "fergal.moran@gmail.com"
+git config --global user.name "Fergal Moran"
+
 

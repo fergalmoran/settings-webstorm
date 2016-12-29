@@ -51,7 +51,7 @@ doPsKill(){
 }
 alias pskill=doPsKill
 
-if ! type "docker" >  /dev/null; then
+if type "$docker" >  /dev/null; then
     alias docker-nuke="docker rm $(docker ps -a -q) && docker rmi $(docker images -q)"
     alias dc='docker-compose'
     alias docker-rm-untagged='docker rmi -f $(docker images | grep "^<none>" | awk "{print $3}")'
