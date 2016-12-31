@@ -51,7 +51,7 @@ ZSH_THEME="muse"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git, thefuck, git-flow-completion)
+plugins=(git, thefuck, git-flow-completion, virtualenvwrapper)
 
 source $ZSH/oh-my-zsh.sh
 source /usr/share/autojump/autojump.sh
