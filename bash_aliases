@@ -33,6 +33,7 @@ alias rmq=' sudo rabbitmqctl'
 alias congo='node /srv/dev/working/congo/server.js'
 
 alias zap='/home/fergalm/working/ZAP/zap.sh > /dev/null 2>&1 &'
+alias git-browse="xdg-open \`git remote -v | grep git@github.com | grep fetch | head -1 | cut -f2 | cut -d' ' -f1 | sed -e's/:/\//' -e 's/git@/http:\/\//'\`"
 
 alias andconnect='adb connect 10.1.1.102:5555'
 
