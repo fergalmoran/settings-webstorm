@@ -1,3 +1,4 @@
+IP=$(hostname -I)
 
 #Django stuff
 alias djrun="source /home/fergalm/dev/personal/deepsouthsounds.com/dss.docker/api_env && python manage.py runserver 0.0.0.0:8001"
@@ -16,8 +17,7 @@ alias dbv="dbeaver > /dev/null 2>&1 &"
 alias rsl="rslsync --config /home/fergalm/.config/resilio-sync/config.json"
 
 alias reloadbashrc="source ~/.bashrc"
-alias server="livereload -p 9999"
-# alias server="python -m SimpleHTTPServer 9999"
+alias server="livereload -p 9999 --host $IP"
 alias upd="sudo apt update && sudo apt dist-upgrade && sudo apt autoremove"
 alias psql="sudo -u postgres psql deepsouthsounds"
 alias code="/usr/bin/code-insiders"
