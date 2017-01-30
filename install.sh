@@ -50,7 +50,7 @@ sudo locale-gen "en_IE.UTF-8"
 #install default packages
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
-sudo apt install -y exuberant-ctags build-essential cmake python-dev python3-dev libssl-dev vim-youcompleteme autojump nodejs htop ncdu python-pip byobu zsh vim-gtk python-setuptools
+sudo apt-get install -y exuberant-ctags build-essential cmake python-dev python3-dev libssl-dev vim-youcompleteme autojump nodejs htop ncdu python-pip byobu zsh vim-gtk python-setuptools
 sudo pip install --upgrade pip
 sudo pip install livereload speedtest-cli virtualenv virtualenvwrapper
 chsh -s /bin/zsh
