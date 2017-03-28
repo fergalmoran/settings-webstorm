@@ -131,4 +131,4 @@ then
     export PROJECT_HOME=$HOME/dev/personal
     source /usr/local/bin/virtualenvwrapper.sh
 fi
-
+export PATH=$PATH:/opt/mssql-tools/bin
