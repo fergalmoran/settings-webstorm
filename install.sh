@@ -32,6 +32,8 @@ ln -s $dir/bin ~/bin
 #ln $dir/fonts ~/.fonts
 #fc-cache -f -v
 
+#install git flow completion
+git clone https://github.com/bobthecow/git-flow-completion ~/.oh-my-zsh/custom/plugins/git-flow-completion
 
 git clone https://github.com/powerline/fonts.git pwfonts
 cd pwfonts && ./install.sh
