@@ -27,8 +27,6 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
-ln -s $dir/bin ~/bin
-
 #ln $dir/fonts ~/.fonts
 #fc-cache -f -v
 
