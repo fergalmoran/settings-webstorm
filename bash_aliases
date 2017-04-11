@@ -13,6 +13,8 @@ alias dss_radio="cd ~/dev/personal/deepsouthsounds.com/dss.radio && workon dss.r
 alias pgdo="sudo -u postgres"
 alias pgadmin="docker run -it --rm -v /home/fergalm/working/pgadmin-data:/pgadmin-data --net=host fergalmoran/pgadmin4:latest; xdg-open http://localhost:5050"
 alias runmssql="docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=MyComplexPassword!234' -p 1433:1433 -v /home/fergalm/working/mssql-data:/var/opt/mssql -d microsoft/mssql-server-linux"
+alias tor="docker run -i -t --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:ro paulczar/torbrowser"
+
 alias sqlw="sqlw &"
 alias se="/opt/StorageExplorer/StorageExplorer > /dev/null 2>&1 &"
 alias dbv="dbeaver > /dev/null 2>&1 &"

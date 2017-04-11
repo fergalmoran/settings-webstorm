@@ -51,9 +51,19 @@ sudo locale-gen "en_IE.UTF-8"
 
 #install default packages
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo add-apt-repository ppa:neovim-ppa/stable
 
-sudo apt-get install -y exuberant-ctags build-essential cmake python-dev python3-dev libssl-dev vim-youcompleteme autojump nodejs htop ncdu python-pip byobu zsh vim-gtk python-setuptools
+sudo apt-get install -y exuberant-ctags build-essential cmake python-dev python3-dev libssl-dev vim-youcompleteme autojump nodejs htop ncdu python-pip python3-pip byobu zsh vim-gtk python-setuptools neovim
 sudo pip install --upgrade pip
+sudo pip install --upgrade neovim
+sudo pip3 install --upgrade neovim
+sudo update-alternatives --install /usr/bin/vi vi /usr/bin/nvim 60
+sudo update-alternatives --config vi
+sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 60
+sudo update-alternatives --config vim
+sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
+sudo update-alternatives --config editor
+
 sudo pip install livereload speedtest-cli virtualenv virtualenvwrapper
 chsh -s /bin/zsh
 
