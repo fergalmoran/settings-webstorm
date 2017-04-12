@@ -51,7 +51,7 @@ sudo locale-gen "en_IE.UTF-8"
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo add-apt-repository ppa:neovim-ppa/stable -y
 sudo apt-get update
-sudo apt-get install -y exuberant-ctags build-essential cmake python-dev python3-dev libssl-dev vim-youcompleteme autojump nodejs htop ncdu python-pip python3-pip byobu zsh vim-gtk python-setuptools neovim
+sudo apt-get install -y exuberant-ctags build-essential cmake python-dev python3-dev libssl-dev vim-youcompleteme autojump nodejs htop ncdu python-pip python3-pip byobu zsh vim-gtk python-setuptools neovim tree
 sudo pip install --upgrade pip
 sudo pip install --upgrade neovim
 sudo pip3 install --upgrade neovim
@@ -63,6 +63,8 @@ sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
 sudo update-alternatives --config editor
 
 sudo pip install livereload speedtest-cli virtualenv virtualenvwrapper
+sudo npm install -g goops
+
 chsh -s /bin/zsh
 
 git clone git@github.com:fergalmoran/vimfiles.git ~/.vim
