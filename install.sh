@@ -5,7 +5,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="zshrc bash_aliases bash_functions sqliterc"    # list of files/folders to symlink in homedir
+files="tmux.conf zshrc bash_aliases bash_functions sqliterc"    # list of files/folders to symlink in homedir
 
 ##########
 
