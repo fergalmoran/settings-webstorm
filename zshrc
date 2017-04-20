@@ -83,3 +83,4 @@ source ~/.bash_aliases
 export PATH=$PATH:/home/fergalm/dotfiles/bin
 
 source '/home/fergalm/lib/azure-cli/az.completion'
+source '/home/fergalm/dotfiles/.private.env'
