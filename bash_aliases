@@ -64,3 +64,4 @@ if type "$docker" >  /dev/null; then
     alias docker-rm-untagged='docker rmi -f $(docker images | grep "^<none>" | awk "{print $3}")'
 fi
 
+alias tmux='tmux attach || tmux'
