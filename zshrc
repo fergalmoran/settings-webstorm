@@ -84,3 +84,7 @@ export PATH=$PATH:/home/fergalm/dotfiles/bin
 
 source '/home/fergalm/lib/azure-cli/az.completion'
 source '/home/fergalm/dotfiles/.private.env'
+
+# If not running interactively, do not do anything
+#[[ $- != *i* ]] && return
+#[[ -z "$TMUX" ]] && exec tmux

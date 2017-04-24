@@ -132,3 +132,8 @@ then
     source /usr/local/bin/virtualenvwrapper.sh
 fi
 export PATH=$PATH:/opt/mssql-tools/bin
+
+
+if [ -x /usr/games/cowsay -a -x /usr/games/fortune ]; then
+    fortune | cowsay
+fi

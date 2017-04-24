@@ -5,7 +5,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="zshrc bash_aliases bash_functions sqliterc"    # list of files/folders to symlink in homedir
+files="tmux.conf zshrc bash_aliases bash_functions sqliterc"    # list of files/folders to symlink in homedir
 
 ##########
 
@@ -51,10 +51,13 @@ sudo locale-gen "en_IE.UTF-8"
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo add-apt-repository ppa:neovim-ppa/stable -y
 sudo apt update
-sudo apt install -y exuberant-ctags build-essential cmake python-dev python3-dev libssl-dev vim-youcompleteme autojump nodejs htop ncdu python-pip python3-pip byobu zsh vim-gtk python-setuptools neovim tree git-extras winbind
+sudo apt-get install -y exuberant-ctags build-essential cmake python-dev python3-dev libssl-dev vim-youcompleteme autojump nodejs htop ncdu python-pip python3-pip byobu zsh vim-gtk python-setuptools neovim tree git-extras cowsay fortune winbind
 sudo pip install --upgrade pip
 sudo pip install --upgrade neovim
 sudo pip3 install --upgrade neovim
+ln -s ~/.vim ~/.config/nvim
+ln -s ~/.vimrc ~/.config/nvim/init.vim
+
 sudo update-alternatives --install /usr/bin/vi vi /usr/bin/nvim 60
 sudo update-alternatives --config vi
 sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 60
@@ -77,5 +80,3 @@ vim +BundleInstall +qall
 
 git config --global user.email "fergal.moran@gmail.com"
 git config --global user.name "Fergal Moran"
-
-
