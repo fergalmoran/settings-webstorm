@@ -63,5 +63,4 @@ if type "$docker" >  /dev/null; then
     alias dc='docker-compose'
     alias docker-rm-untagged='docker rmi -f $(docker images | grep "^<none>" | awk "{print $3}")'
 fi
-
-alias tmux='tmux attach || tmux'
+alias tmux="TERM=screen-256color-bce tmux attach || TERM=screen-256color-bce tmux"
