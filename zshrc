@@ -80,7 +80,7 @@ source ~/.bash_aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH=$PATH:/home/fergalm/dotfiles/bin
+export PATH=$PATH:/home/fergalm/dotfiles/bin:/opt/android/sdk/platform-tools/
 
 source '/home/fergalm/lib/azure-cli/az.completion'
 source '/home/fergalm/dotfiles/.private.env'

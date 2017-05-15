@@ -1,4 +1,5 @@
 IP=$(hostname -I | cut -d' ' -f1)
+alias ls="ls -alh"
 
 #Django stuff
 alias djrun="source /home/fergalm/dev/personal/deepsouthsounds.com/dss.docker/api_env && python manage.py runserver 0.0.0.0:8001"
