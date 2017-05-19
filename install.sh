@@ -51,7 +51,7 @@ sudo locale-gen "en_IE.UTF-8"
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo add-apt-repository ppa:neovim-ppa/stable -y
 sudo apt update
-sudo apt-get install -y exuberant-ctags build-essential cmake python-dev python3-dev libssl-dev vim-youcompleteme autojump nodejs htop ncdu python-pip python3-pip byobu zsh vim-gtk python-setuptools neovim tree git-extras cowsay fortune winbind libpq-dev
+sudo apt-get install -y exuberant-ctags build-essential cmake python-dev python3-dev libssl-dev vim-youcompleteme autojump nodejs htop ncdu python-pip python3-pip byobu zsh vim-gtk python-setuptools neovim tree git-extras cowsay fortune winbind libpq-dev xclip
 sudo pip install --upgrade pip
 sudo pip install --upgrade neovim
 sudo pip3 install --upgrade neovim
