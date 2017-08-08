@@ -60,6 +60,8 @@ doPsKill(){
 }
 alias pskill=doPsKill
 
+alias dockerx="docker --tlsverify -H=podnoms.com:2376 --tlscacert=/srv/sharing/docker-tls/podnoms/ca.pem --tlscert=/srv/sharing/docker-tls/podnoms/cert.pem --tlskey=/srv/sharing/docker-tls/podnoms/key.pem"
+
 if type "$docker" >  /dev/null; then
     alias docker-nuke="docker rm $(docker ps -a -q) && docker rmi $(docker images -q)"
     alias dc='docker-compose'
