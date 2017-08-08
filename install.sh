@@ -27,8 +27,9 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
-#ln $dir/fonts ~/.fonts
-#fc-cache -f -v
+sudo cp -r fonts/* /usr/share/fonts/opentype
+fc-cache -f -v
+sudo fc-cache -f -v
 
 
 git clone https://github.com/powerline/fonts.git pwfonts
@@ -46,10 +47,9 @@ git clone https://github.com/bobthecow/git-flow-completion ~/.oh-my-zsh/custom/p
 sudo locale-gen "en_IE.UTF-8"
 
 #install default packages
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-sudo add-apt-repository ppa:neovim-ppa/stable -y
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt update
-sudo apt-get install -y exuberant-ctags build-essential cmake python-dev python3-dev libssl-dev vim-youcompleteme autojump nodejs htop ncdu python-pip python3-pip byobu zsh vim-gtk python-setuptools neovim tree git-extras cowsay fortune winbind libpq-dev xclip
+sudo apt-get install -y exuberant-ctags build-essential cmake python-dev python3-dev libssl-dev vim-youcompleteme autojump nodejs htop ncdu python-pip python3-pip byobu zsh vim-gtk python-setuptools neovim tree git-extras cowsay fortune winbind libpq-dev xclip whois
 sudo pip install --upgrade pip
 sudo pip install --upgrade neovim
 sudo pip3 install --upgrade neovim
