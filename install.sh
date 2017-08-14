@@ -5,7 +5,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="tmux.conf zshrc bash_aliases bash_functions sqliterc"    # list of files/folders to symlink in homedir
+files="tmux.conf zshrc bash_aliases bash_functions sqliterc Xresources"    # list of files/folders to symlink in homedir
 
 ##########
 
@@ -27,6 +27,9 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
+# merge Xresources
+xrdb -merge ~/.Xresources
+
 sudo cp -r fonts/* /usr/share/fonts/opentype
 fc-cache -f -v
 sudo fc-cache -f -v
@@ -39,6 +42,9 @@ OMF=~/.oh-my-zsh/oh-my-zsh.sh
 if [ ! -f $OMF ]; then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
+
+#install tmux plugin manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 #install git flow completion
 git clone https://github.com/bobthecow/git-flow-completion ~/.oh-my-zsh/custom/plugins/git-flow-completion

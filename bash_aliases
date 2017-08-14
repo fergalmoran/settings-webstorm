@@ -1,4 +1,6 @@
 IP=$(hostname -I | cut -d' ' -f1)
+HOSTNAME=`hostname -s`
+
 alias ls="ls -alh"
 
 #Django stuff
@@ -60,7 +62,12 @@ doPsKill(){
 }
 alias pskill=doPsKill
 
-alias dockerx="docker --tlsverify -H=podnoms.com:2376 --tlscacert=/srv/sharing/docker-tls/podnoms/ca.pem --tlscert=/srv/sharing/docker-tls/podnoms/cert.pem --tlskey=/srv/sharing/docker-tls/podnoms/key.pem"
+alias dcx="docker-compose -H podnoms.com:2376 --tlsverify --tlscacert /mnt/niles/sharing/docker-tls/podnoms/ca.pem --tlscert /mnt/niles/sharing/docker-tls/podnoms/cert.pem --tlskey /mnt/niles/sharing/docker-tls/podnoms/key.pem"
+
+case $HOSTNAME in
+    (NILES) alias dockerx="docker --tlsverify -H=podnoms.com:2376 --tlscacert=/srv/sharing/docker-tls/podnoms/ca.pem --tlscert=/srv/sharing/docker-tls/podnoms/cert.pem --tlskey=/srv/sharing/docker-tls/podnoms/key.pem";;
+    (EDDIE) alias dockerx="docker --tlsverify -H=podnoms.com:2376 --tlscacert=/mnt/niles/sharing/docker-tls/podnoms/ca.pem --tlscert=/mnt/niles/sharing/docker-tls/podnoms/cert.pem --tlskey=/mnt/niles/sharing/docker-tls/podnoms/key.pem";;
+esac
 
 if type "$docker" >  /dev/null; then
     alias docker-nuke="docker rm $(docker ps -a -q) && docker rmi $(docker images -q)"
