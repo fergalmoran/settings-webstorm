@@ -2,6 +2,7 @@ function pips() {
     echo $'\n'$1 >> requirements.txt; pip install $1
 }
 
+<<<<<<< HEAD
 function reset_webstorm(){
     cd ~/.WebStorm*
     rm config/eval/WebStorm*evaluation.key
@@ -10,6 +11,8 @@ function reset_webstorm(){
     rm -rf webstorm
 }
 
+=======
+>>>>>>> parent of 02ed9ee... WS-2017.2 <fergalm@localhost Overwrite remote git@github.com:fergalmoran/dotfiles.git to local
 cb() {
   local _scs_col="\e[0;32m"; local _wrn_col='\e[1;31m'; local _trn_col='\e[0;33m'
   # Check that xclip is installed.
