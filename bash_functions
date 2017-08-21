@@ -2,6 +2,14 @@ function pips() {
     echo $'\n'$1 >> requirements.txt; pip install $1
 }
 
+function reset_webstorm(){
+    cd ~/.WebStorm*
+    rm config/eval/WebStorm*evaluation.key
+    rm config/options/options.xml
+    cd ~/.java/.userPrefs/jetbrains
+    rm -rf webstorm
+}
+
 cb() {
   local _scs_col="\e[0;32m"; local _wrn_col='\e[1;31m'; local _trn_col='\e[0;33m'
   # Check that xclip is installed.
